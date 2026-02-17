@@ -3,9 +3,6 @@
   "devCommand": "next dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_GOOGLE_ANALYTICS": "@NEXT_PUBLIC_GOOGLE_ANALYTICS"
-  },
   "headers": [
     {
       "source": "/api/submit-quote",
