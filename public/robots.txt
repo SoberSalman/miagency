@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.env*
+Disallow: /next/
+
+# Crawl delay
+Crawl-delay: 1
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://miagency.com/sitemap.xml
