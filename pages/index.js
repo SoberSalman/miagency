@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import MiagencyLanding from '../landing-page';
+import MiagencyLanding from '../components/landing-page';
 
 export default function Home() {
   const structuredData = {
