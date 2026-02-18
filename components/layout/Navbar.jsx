@@ -46,13 +46,18 @@ export default function Navbar() {
             </Link>
 
             {/* Services Dropdown */}
-            <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <button className={`flex items-center gap-1 text-sm font-medium transition-colors ${router.pathname.startsWith('/services') ? 'text-gold-700' : 'text-navy-700 hover:text-gold-700'}`}>
+            <div className="relative group">
+              <button className={`flex items-center gap-1 text-sm font-medium transition-colors ${router.pathname.startsWith('/services') ? 'text-gold-700' : 'text-navy-700 hover:text-gold-700'}`}
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}>
                 Services <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white border border-gold-200 rounded-xl shadow-xl py-2 z-50">
+                <div
+                  className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-56 bg-white border border-gold-200 rounded-xl shadow-xl py-2 z-50"
+                  onMouseEnter={() => setServicesOpen(true)}
+                  onMouseLeave={() => setServicesOpen(false)}>
                   {services.map((s) => (
                     <Link
                       key={s.href}

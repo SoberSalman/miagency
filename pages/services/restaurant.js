@@ -83,7 +83,7 @@ export default function RestaurantInsurance() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="font-display text-4xl font-bold text-navy-900 mb-3">Get a Restaurant Insurance Quote</h2>
-            <p className="text-navy-500">Tell us about your restaurant and we'll build a policy that truly fits.</p>
+            <p className="text-navy-500">Tell us about your restaurant and we&apos;ll build a policy that truly fits.</p>
           </div>
           <div className="bg-cream-50 border border-cream-200 rounded-2xl p-8">
             <ContactForm defaultService="restaurant" />

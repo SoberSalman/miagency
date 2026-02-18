@@ -36,7 +36,7 @@ export default function Contact() {
             <div className="lg:col-span-3">
               <div className="bg-cream-50 border border-cream-200 rounded-2xl p-8 sm:p-10">
                 <h2 className="font-display text-3xl font-bold text-navy-900 mb-2">Send Us a Message</h2>
-                <p className="text-navy-500 mb-8 text-sm">Fill in your details and we'll respond within one business day.</p>
+                <p className="text-navy-500 mb-8 text-sm">Fill in your details and we&apos;ll respond within one business day.</p>
                 <ContactForm />
               </div>
             </div>

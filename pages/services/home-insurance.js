@@ -40,7 +40,7 @@ export default function HomeInsurance() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-700 font-medium tracking-widest text-sm uppercase mb-3">What's Covered</p>
+            <p className="text-gold-700 font-medium tracking-widest text-sm uppercase mb-3">What&apos;s Covered</p>
             <h2 className="font-display text-4xl font-bold text-navy-900">Home Coverage Options</h2>
             <div className="w-16 h-0.5 bg-gold-500 mx-auto mt-5" />
           </div>

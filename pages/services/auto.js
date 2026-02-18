@@ -41,7 +41,7 @@ export default function AutoInsurance() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-700 font-medium tracking-widest text-sm uppercase mb-3">What's Included</p>
+            <p className="text-gold-700 font-medium tracking-widest text-sm uppercase mb-3">What&apos;s Included</p>
             <h2 className="font-display text-4xl font-bold text-navy-900">Coverage Options</h2>
             <div className="w-16 h-0.5 bg-gold-500 mx-auto mt-5" />
           </div>
@@ -88,7 +88,7 @@ export default function AutoInsurance() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="font-display text-4xl font-bold text-navy-900 mb-3">Get Your Auto Insurance Quote</h2>
-            <p className="text-navy-500">Tell us about your vehicle and we'll find you the best coverage at the best price.</p>
+            <p className="text-navy-500">Tell us about your vehicle and we&apos;ll find you the best coverage at the best price.</p>
           </div>
           <div className="bg-cream-50 border border-cream-200 rounded-2xl p-8">
             <ContactForm defaultService="auto" />
