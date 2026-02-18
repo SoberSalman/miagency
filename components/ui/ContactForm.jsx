@@ -18,7 +18,14 @@ export default function ContactForm({ defaultService = 'auto' }) {
   useEffect(() => {
     if (router.query.scroll === 'form' && formRef.current) {
       setTimeout(() => {
-        formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const element = formRef.current;
+        if (element) {
+          const offset = element.offsetTop - 120; // Account for nav bar height
+          window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+          });
+        }
       }, 100);
     }
   }, [router.query.scroll]);
