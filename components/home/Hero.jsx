@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Shield } from 'lucide-react';
 
 export default function Hero() {
   return (
