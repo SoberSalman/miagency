@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Shield, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -63,10 +63,7 @@ export default function Hero() {
           <div className="hidden lg:block">
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-navy-700 to-navy-800 rounded-2xl border border-gold-500/20 overflow-hidden shadow-2xl flex items-center justify-center">
-                <div className="text-center text-cream-300 space-y-3">
-                  <Shield className="w-24 h-24 text-gold-400/30 mx-auto" />
-                  <p className="text-sm">Your hero image here</p>
-                </div>
+                <img src="/logo.jpg" alt="MARRIUM Insurance" className="w-48 h-48 object-contain opacity-40" />
               </div>
               {/* Floating card */}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-5 w-44">
