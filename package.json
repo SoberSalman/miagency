@@ -1,7 +1,7 @@
 {
-  "name": "miagency-landing",
+  "name": "marrium-insurance-landing",
   "version": "1.0.0",
-  "description": "Professional insurance landing page for MIAGENCY",
+  "description": "Professional auto insurance landing page for MARRIUM Insurance",
   "private": true,
   "scripts": {
     "dev": "next dev",

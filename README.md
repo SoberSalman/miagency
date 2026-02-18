@@ -1,6 +1,6 @@
-# MIAGENCY - Insurance Landing Page
+# MARRIUM Insurance - Auto Insurance Landing Page
 
-A modern, responsive insurance landing page built with **Next.js 14**, **React 18**, and **Tailwind CSS**.
+A modern, responsive auto insurance landing page built with **Next.js 14**, **React 18**, and **Tailwind CSS**. Professional design matching MARRIUM brand identity.
 
 ## 🚀 Quick Start
 

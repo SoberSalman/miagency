@@ -7,14 +7,14 @@ export default function Document() {
         {/* Meta Tags */}
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
-        <meta name="description" content="MIAGENCY - Professional insurance solutions for auto, home, life, and business coverage. Get your free quote today." />
-        <meta name="keywords" content="insurance, auto insurance, home insurance, life insurance, business insurance" />
-        <meta name="theme-color" content="#0d9488" />
+        <meta name="description" content="MARRIUM Insurance - Affordable auto insurance with fast claims, competitive rates, and 24/7 support. We've got you covered!" />
+        <meta name="keywords" content="auto insurance, car insurance, affordable rates, quick quotes, 24/7 support" />
+        <meta name="theme-color" content="#2d2d2d" />
 
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="MIAGENCY" />
+        <meta property="og:site_name" content="MARRIUM Insurance" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
