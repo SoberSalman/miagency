@@ -10,8 +10,6 @@ export default function ServiceHero({ icon: Icon, title, subtitle, description, 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-cream-300 mb-8">
-          <Link href="/" className="hover:text-gold-400 transition">Home</Link>
-          <span>/</span>
           <Link href="/#services" className="hover:text-gold-400 transition">Services</Link>
           <span>/</span>
           <span className="text-gold-400">{breadcrumb}</span>
@@ -32,7 +30,7 @@ export default function ServiceHero({ icon: Icon, title, subtitle, description, 
           </h1>
           <p className="text-xl text-cream-100 leading-relaxed mb-8">{description}</p>
 
-          <Link href="/contact" className="group inline-flex items-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg">
+          <Link href="/contact?scroll=form" className="group inline-flex items-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg">
             Request a Free Quote
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>

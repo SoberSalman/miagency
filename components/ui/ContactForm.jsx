@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
 import { CheckCircle2 } from 'lucide-react';
 
 const serviceOptions = [
@@ -10,6 +11,17 @@ const serviceOptions = [
 ];
 
 export default function ContactForm({ defaultService = 'auto' }) {
+  const formRef = useRef(null);
+  const router = useRouter();
+
+  // Smooth scroll to form when requested
+  useEffect(() => {
+    if (router.query.scroll === 'form' && formRef.current) {
+      setTimeout(() => {
+        formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }, [router.query.scroll]);
   const [formData, setFormData] = useState({
     name: '', email: '', phone: '',
     serviceType: defaultService, message: ''
@@ -59,7 +71,7 @@ export default function ContactForm({ defaultService = 'auto' }) {
 
   if (submitted) {
     return (
-      <div className="text-center py-16 space-y-4">
+      <div ref={formRef} className="text-center py-16 space-y-4">
         <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto">
           <CheckCircle2 className="w-8 h-8 text-gold-700" />
         </div>
@@ -76,7 +88,7 @@ export default function ContactForm({ defaultService = 'auto' }) {
   const label = 'block text-sm font-semibold text-navy-800 mb-2';
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="name" className={label}>Full Name *</label>

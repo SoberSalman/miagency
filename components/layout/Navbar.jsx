@@ -30,7 +30,7 @@ export default function Navbar() {
   const isActive = (href) => router.pathname === href;
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white border-b border-gold-200'}`}>
+    <nav className={`sticky top-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-lg border-b border-gold-300' : 'border-b border-cream-200'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
 

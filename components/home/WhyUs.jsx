@@ -41,7 +41,7 @@ export default function WhyUs() {
               ))}
             </ul>
 
-            <Link href="/contact" className="inline-flex items-center gap-2 mt-10 px-8 py-4 bg-navy-900 hover:bg-gold-700 text-white font-semibold rounded-lg transition-colors">
+            <Link href="/contact?scroll=form" className="inline-flex items-center gap-2 mt-10 px-8 py-4 bg-navy-900 hover:bg-gold-700 text-white font-semibold rounded-lg transition-colors">
               Speak With an Agent
             </Link>
           </div>

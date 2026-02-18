@@ -16,10 +16,8 @@ export default function Contact() {
       <section className="relative bg-gradient-to-br from-navy-900 to-navy-800 py-24">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-cream-300 mb-8">
-            <Link href="/" className="hover:text-gold-400 transition">Home</Link>
-            <span>/</span>
-            <span className="text-gold-400">Contact</span>
+          <nav className="text-sm text-gold-400 mb-8">
+            Contact Us
           </nav>
           <p className="text-gold-300 font-medium tracking-widest text-sm uppercase mb-3">Get in Touch</p>
           <h1 className="font-display text-5xl sm:text-6xl font-bold text-white">Request a Free Quote</h1>

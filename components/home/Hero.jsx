@@ -4,10 +4,13 @@ import { Shield, ArrowRight } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 min-h-[90vh] flex items-center">
+      {/* Logo background watermark */}
+      <div className="absolute inset-0">
+        <img src="/logo.jpg" alt="" className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/3 w-96 h-96 opacity-5 blur-sm" />
+      </div>
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-gold-500 opacity-5 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-gold-300 opacity-5 blur-3xl" />
-      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-10" />
 
       {/* Gold top border accent */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
@@ -32,7 +35,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-gold-500/30">
+              <Link href="/contact?scroll=form" className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-gold-500/30">
                 Get a Free Quote
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>

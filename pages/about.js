@@ -15,10 +15,8 @@ export default function About() {
       <section className="relative bg-gradient-to-br from-navy-900 to-navy-800 py-24">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-cream-300 mb-8">
-            <Link href="/" className="hover:text-gold-400 transition">Home</Link>
-            <span>/</span>
-            <span className="text-gold-400">About Us</span>
+          <nav className="text-sm text-gold-400 mb-8">
+            About Us
           </nav>
           <p className="text-gold-300 font-medium tracking-widest text-sm uppercase mb-3">Who We Are</p>
           <h1 className="font-display text-5xl sm:text-6xl font-bold text-white">About MARRIUM Insurance</h1>
@@ -101,7 +99,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-4xl font-bold text-navy-900 mb-4">Ready to Get Protected?</h2>
           <p className="text-navy-600 mb-8">Speak with a MARRIUM Insurance specialist today and get your free, personalized quote.</p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-700 hover:bg-gold-600 text-white font-semibold rounded-lg transition-colors">
+          <Link href="/contact?scroll=form" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-700 hover:bg-gold-600 text-white font-semibold rounded-lg transition-colors">
             Get a Free Quote
           </Link>
         </div>
