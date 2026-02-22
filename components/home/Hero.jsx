@@ -23,11 +23,11 @@ export default function Hero() {
       {/* Gold top rule */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 lg:py-28 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* ── Left ── */}
-          <div className="space-y-8 animate-fadeInUp">
+          <div className="space-y-6 lg:space-y-8 animate-fadeInUp">
 
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full">
@@ -37,14 +37,14 @@ export default function Hero() {
 
             {/* Headline */}
             <div className="space-y-3">
-              <h1 className="font-display text-5xl sm:text-6xl lg:text-[4.25rem] font-bold text-white leading-[1.08] tracking-tight">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-[4.25rem] font-bold text-white leading-[1.08] tracking-tight">
                 We Protect What<br />
                 <span className="gold-shimmer italic">Matters Most.</span>
               </h1>
             </div>
 
             {/* Identity statement */}
-            <p className="text-lg text-cream-100/90 leading-relaxed max-w-xl">
+            <p className="text-base lg:text-lg text-cream-100/90 leading-relaxed max-w-xl">
               We are a nationwide insurance agency serving clients across multiple states. From personal auto and homeowners&apos; coverage to nationwide commercial insurance solutions, we protect what you&apos;ve worked hard to build.
             </p>
 
@@ -54,32 +54,32 @@ export default function Hero() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
               <Link href="/contact?scroll=form"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-4 bg-gold-600 hover:bg-gold-500 text-white text-lg font-bold rounded-lg transition-all shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5 whitespace-nowrap">
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold-600 hover:bg-gold-500 text-white text-lg font-bold rounded-lg transition-all shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5 whitespace-nowrap">
                 Get a Quote
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link href="/business"
-                className="inline-flex items-center justify-center px-6 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5 whitespace-nowrap">
+                className="inline-flex items-center justify-center px-6 py-3.5 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5 whitespace-nowrap">
                 Protect My Business
               </Link>
               <Link href="/personal"
-                className="inline-flex items-center justify-center px-6 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5 text-center leading-snug">
+                className="inline-flex items-center justify-center px-6 py-3.5 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5 text-center leading-snug">
                 Protect My<br />Home / Auto
               </Link>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-navy-700/60">
+            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-navy-700/60">
               {[
                 { num: 'Nationwide', label: 'Coverage' },
                 { num: 'Multi-State', label: 'Reach' },
                 { num: 'All Risk', label: 'Classes' },
               ].map((s) => (
                 <div key={s.label}>
-                  <div className="font-display text-3xl font-bold text-gold-400">{s.num}</div>
-                  <div className="text-sm text-cream-300 mt-1">{s.label}</div>
+                  <div className="font-display text-lg sm:text-2xl lg:text-3xl font-bold text-gold-400 leading-tight">{s.num}</div>
+                  <div className="text-xs sm:text-sm text-cream-300 mt-1">{s.label}</div>
                 </div>
               ))}
             </div>

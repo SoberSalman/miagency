@@ -11,7 +11,7 @@ export default function Footer() {
 
             {/* Brand */}
             <div className="space-y-4">
-              <img src="/logo.jpg" alt="MARRIUM Insurance" className="h-14 w-auto brightness-0 invert" />
+              <img src="/logo-transparent.png" alt="MARRIUM Insurance" className="h-16 w-auto" />
               <p className="text-sm leading-relaxed text-cream-200">
                 Nationwide insurance solutions for individuals and businesses. Trusted expertise. Personalized service.
               </p>

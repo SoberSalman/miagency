@@ -64,7 +64,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.jpg" alt="MARRIUM Insurance" className="h-14 w-auto" />
+            <img src="/logo-transparent.png" alt="MARRIUM Insurance" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
