@@ -24,7 +24,7 @@ export default function HomeInsurance() {
   return (
     <Layout>
       <Head>
-        <title>Home Insurance — MARRIUM Insurance | San Antonio, TX</title>
+        <title>Home Insurance | MARRIUM Insurance | San Antonio, TX</title>
         <meta name="description" content="Protect your home with MARRIUM Insurance. Comprehensive homeowners coverage in San Antonio, TX. Get a free quote today." />
       </Head>
 

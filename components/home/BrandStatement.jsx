@@ -24,8 +24,8 @@ export default function BrandStatement() {
 
         {/* Pull quote */}
         <blockquote className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
-          At MARRIUM Insurance, we believe insurance isn&apos;t paperwork —
-          <span className="text-gold-400 italic"> it&apos;s protection</span> for everything you&apos;ve worked hard to build.
+          At MARRIUM Insurance, we believe insurance isn&apos;t paperwork.
+          <span className="text-gold-400 italic"> It&apos;s protection</span> for everything you&apos;ve worked hard to build.
         </blockquote>
 
         {/* Gold rule */}
@@ -33,7 +33,7 @@ export default function BrandStatement() {
 
         {/* Body */}
         <p className="text-cream-200 text-lg leading-relaxed max-w-2xl mx-auto">
-          From personal auto and homeowners&apos; coverage to nationwide commercial insurance solutions — from luxury resorts to bustling restaurants, from large-scale mansions to commercial fleets — we protect what matters most.
+          From personal auto and homeowners&apos; coverage to nationwide commercial insurance solutions, from luxury resorts to bustling restaurants, from large-scale mansions to commercial fleets, we protect what matters most.
         </p>
 
         {/* Tagline */}

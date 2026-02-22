@@ -13,7 +13,7 @@ const categories = [
     icon: UtensilsCrossed,
     title: 'Restaurant',
     tagline: 'Your kitchen runs on more than recipes.',
-    description: 'From slip-and-fall liability to equipment breakdown and business interruption — restaurant insurance covers the risks that come with every service. We structure policies for everything from small cafes to multi-location operations.',
+    description: 'From slip-and-fall liability to equipment breakdown and business interruption, restaurant insurance covers the risks that come with every service. We structure policies for everything from small cafes to multi-location operations.',
     query: 'restaurant',
     color: 'text-rose-400',
   },
@@ -21,7 +21,7 @@ const categories = [
     icon: Hotel,
     title: 'Hospitality',
     tagline: 'Every guest is a responsibility.',
-    description: 'Hotels, resorts, motels, and short-term rentals carry unique exposure. We cover property, general liability, loss of income, guest incidents, and employee-related claims — built around your scale of operation.',
+    description: 'Hotels, resorts, motels, and short-term rentals carry unique exposure. We cover property, general liability, loss of income, guest incidents, and employee-related claims, built around your scale of operation.',
     query: 'hospitality',
     color: 'text-amber-400',
   },
@@ -29,7 +29,7 @@ const categories = [
     icon: HardHat,
     title: 'Contractors & Trades',
     tagline: 'You build things. We protect them.',
-    description: 'General contractors, electricians, plumbers, roofers, HVAC technicians — every trade carries liability on the job. We provide general liability, tools & equipment, completed operations, and workers comp coverage.',
+    description: 'General contractors, electricians, plumbers, roofers, HVAC technicians: every trade carries liability on the job. We provide general liability, tools & equipment, completed operations, and workers comp coverage.',
     query: 'contractors',
     color: 'text-orange-400',
   },
@@ -37,7 +37,7 @@ const categories = [
     icon: Building2,
     title: 'Commercial Property',
     tagline: 'Protect the asset, protect the income.',
-    description: 'Your building, equipment, and inventory represent your life\'s work. We cover structural damage, contents, loss of business income, and flood options — tailored to your property type and occupancy.',
+    description: 'Your building, equipment, and inventory represent your life\'s work. We cover structural damage, contents, loss of business income, and flood options, tailored to your property type and occupancy.',
     query: 'commercial-property',
     color: 'text-emerald-400',
   },
@@ -45,7 +45,7 @@ const categories = [
     icon: FileText,
     title: 'Professional Liability',
     tagline: 'Even good advice can be misunderstood.',
-    description: 'If your business provides professional services, advice, or expertise — you need E&O coverage. Protect against claims of negligence, errors, omissions, or failure to deliver promised results.',
+    description: 'If your business provides professional services, advice, or expertise, you need E&O coverage. Protect against claims of negligence, errors, omissions, or failure to deliver promised results.',
     query: 'professional-liability',
     color: 'text-blue-400',
   },
@@ -53,7 +53,7 @@ const categories = [
     icon: Truck,
     title: 'Commercial Auto & Fleet',
     tagline: 'Every vehicle on the road is a liability.',
-    description: 'From a single delivery van to a full commercial fleet, we structure auto coverage around your operation — liability, physical damage, hired/non-owned, and driver scheduling. One policy. All your vehicles.',
+    description: 'From a single delivery van to a full commercial fleet, we structure auto coverage around your operation: liability, physical damage, hired/non-owned, and driver scheduling. One policy. All your vehicles.',
     query: 'commercial-auto',
     color: 'text-purple-400',
   },
@@ -61,7 +61,7 @@ const categories = [
     icon: Star,
     title: 'Specialty Risk',
     tagline: 'Not every risk fits a standard policy.',
-    description: 'We specialize in hard-to-place and non-standard commercial risks — entertainment venues, luxury assets, unique operations, and industries that standard carriers decline. If it\'s complex, we\'ve seen it.',
+    description: 'We specialize in hard-to-place and non-standard commercial risks, including entertainment venues, luxury assets, unique operations, and industries that standard carriers decline. If it\'s complex, we\'ve seen it.',
     query: 'specialty',
     color: 'text-indigo-400',
   },
@@ -69,14 +69,14 @@ const categories = [
     icon: Shield,
     title: 'Umbrella Coverage',
     tagline: 'When primary limits aren\'t enough.',
-    description: 'A single major claim can exceed your base policy limits. Commercial umbrella coverage provides an additional layer of liability protection above your existing commercial policies — for when it really matters.',
+    description: 'A single major claim can exceed your base policy limits. Commercial umbrella coverage provides an additional layer of liability protection above your existing commercial policies, for when it really matters.',
     query: 'umbrella',
     color: 'text-teal-400',
   },
   {
     icon: Users,
     title: 'EPL',
-    tagline: 'Your employees are your greatest asset — and your greatest exposure.',
+    tagline: 'Your employees are your greatest asset and your greatest exposure.',
     description: 'Employment Practices Liability protects your business against claims of wrongful termination, discrimination, harassment, retaliation, and more. Critical for any business with employees.',
     query: 'epl',
     color: 'text-pink-400',
@@ -93,7 +93,7 @@ const categories = [
     icon: Briefcase,
     title: 'Workers Compensation',
     tagline: 'Protect your people. Protect your business.',
-    description: 'Required in most states — and critical for any operation with employees. We structure workers comp coverage around your payroll, industry class, and safety record to get you the right rate.',
+    description: 'Required in most states and critical for any operation with employees. We structure workers comp coverage around your payroll, industry class, and safety record to get you the right rate.',
     query: 'workers-comp',
     color: 'text-lime-400',
   },
@@ -147,7 +147,7 @@ export default function BusinessInsurance() {
   return (
     <Layout>
       <Head>
-        <title>Business Insurance — MARRIUM Insurance | Commercial Coverage Nationwide</title>
+        <title>Business Insurance | MARRIUM Insurance | Commercial Coverage Nationwide</title>
         <meta name="description" content="Commercial insurance for restaurants, hospitality, contractors, and more. MARRIUM Insurance structures coverage tailored to your business exposure." />
       </Head>
 
@@ -166,10 +166,10 @@ export default function BusinessInsurance() {
             <span className="text-gold-300 text-sm font-medium tracking-wide">Business Insurance</span>
           </div>
           <h1 className="font-display text-5xl sm:text-6xl font-bold text-white mb-6 max-w-3xl leading-tight">
-            Your business is more than numbers — it&apos;s reputation, employees, late nights, and risk.
+            Your business is more than numbers. It&apos;s reputation, employees, late nights, and risk.
           </h1>
           <p className="text-xl text-cream-100 max-w-2xl leading-relaxed">
-            Whether you own a restaurant, contracting company, retail store, fleet, professional service firm, resort, or large commercial operation — we structure coverage tailored to your exposure. We don&apos;t believe in generic policies. We believe in strategic protection.
+            Whether you own a restaurant, contracting company, retail store, fleet, professional service firm, resort, or large commercial operation, we structure coverage tailored to your exposure. We don&apos;t believe in generic policies. We believe in strategic protection.
           </p>
         </div>
       </section>
@@ -205,7 +205,7 @@ export default function BusinessInsurance() {
             Not sure what you need?<br />Let&apos;s talk.
           </h2>
           <p className="text-cream-200 text-lg mb-10 max-w-xl mx-auto">
-            Our specialists analyze your operation and build a coverage structure around your actual risk — not a template.
+            Our specialists analyze your operation and build a coverage structure around your actual risk, not a template.
           </p>
           <Link
             href="/contact?scroll=form&tab=business"

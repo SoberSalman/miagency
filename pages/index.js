@@ -14,11 +14,11 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>MARRIUM Insurance — Nationwide Personal &amp; Commercial Coverage</title>
-        <meta name="description" content="MARRIUM Insurance is a nationwide insurance agency serving clients across multiple states. Personal auto, homeowners, and full commercial coverage — if it needs protection, we insure it." />
+        <title>MARRIUM Insurance | Nationwide Personal &amp; Commercial Coverage</title>
+        <meta name="description" content="MARRIUM Insurance is a nationwide insurance agency serving clients across multiple states. Personal auto, homeowners, and full commercial coverage. If it needs protection, we insure it." />
         <meta name="keywords" content="nationwide insurance, commercial insurance, personal insurance, auto insurance, homeowners insurance, restaurant insurance, contractors insurance, business insurance" />
-        <meta property="og:title" content="MARRIUM Insurance — Nationwide Risk Partner" />
-        <meta property="og:description" content="From personal auto to commercial empires — we protect what matters most. Nationwide coverage, strategic protection." />
+        <meta property="og:title" content="MARRIUM Insurance | Nationwide Risk Partner" />
+        <meta property="og:description" content="From personal auto to commercial empires, we protect what matters most. Nationwide coverage, strategic protection." />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',

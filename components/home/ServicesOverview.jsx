@@ -7,7 +7,7 @@ const hubs = [
     icon: User,
     title: 'Personal Insurance',
     subtitle: 'Your family, home, vehicles, and high-value assets.',
-    description: 'Your life moves fast — your insurance should keep up. Simple, dependable protection built around your lifestyle, not a template.',
+    description: 'Your life moves fast. Your insurance should keep up. Simple, dependable protection built around your lifestyle, not a template.',
     subcategories: ['Auto Insurance', 'Homeowners Insurance', 'Umbrella Coverage', 'High-Value Homes', 'Landlord Policy', 'Renters Insurance'],
     href: '/personal',
     accent: 'from-blue-50 to-cream-100',
@@ -16,8 +16,8 @@ const hubs = [
   {
     icon: Briefcase,
     title: 'Business Insurance',
-    subtitle: 'From restaurants to commercial empires — coverage built for your exposure.',
-    description: "We don't believe in generic policies. Whether you run a restaurant, a contracting firm, or a large-scale commercial operation — we structure protection around your actual risk.",
+    subtitle: 'From restaurants to commercial empires, coverage built for your exposure.',
+    description: "We don't believe in generic policies. Whether you run a restaurant, a contracting firm, or a large-scale commercial operation, we structure protection around your actual risk.",
     subcategories: ['Restaurant & Hospitality', 'Contractors & Trades', 'Commercial Property', 'Professional Liability', 'Commercial Auto & Fleet', '+ 6 more categories'],
     href: '/business',
     accent: 'from-amber-50 to-cream-100',
@@ -40,7 +40,7 @@ export default function ServicesOverview() {
           </h2>
           <div className="w-16 h-px bg-gold-500 mx-auto mt-5 mb-5" />
           <p className="text-navy-500 max-w-2xl mx-auto">
-            Insurance isn&apos;t paperwork — it&apos;s protection for everything you&apos;ve worked hard to build.
+            Insurance isn&apos;t paperwork. It&apos;s protection for everything you&apos;ve worked hard to build.
             Whether you need to protect your family or scale your business, we build coverage tailored to you.
           </p>
         </div>

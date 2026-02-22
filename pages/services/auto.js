@@ -17,7 +17,7 @@ const coverages = [
 const whyPoints = [
   { icon: DollarSign, title: 'Competitive Rates', desc: 'We shop multiple carriers to find you the best price available.' },
   { icon: Zap, title: 'Fast Claims', desc: 'Our streamlined process gets your claim resolved quickly.' },
-  { icon: ShieldCheck, title: 'Full Protection', desc: 'Coverage options for every driver — personal, commercial, and fleet.' },
+  { icon: ShieldCheck, title: 'Full Protection', desc: 'Coverage options for every driver: personal, commercial, and fleet.' },
   { icon: AlertTriangle, title: 'SR-22 Filing', desc: 'We assist with SR-22 certificates for drivers who need proof of coverage.' },
 ];
 
@@ -25,7 +25,7 @@ export default function AutoInsurance() {
   return (
     <Layout>
       <Head>
-        <title>Auto Insurance — MARRIUM Insurance | San Antonio, TX</title>
+        <title>Auto Insurance | MARRIUM Insurance | San Antonio, TX</title>
         <meta name="description" content="Get affordable auto insurance in San Antonio with MARRIUM Insurance. Full coverage, liability, SR-22, and more. Free quotes from licensed specialists." />
       </Head>
 

@@ -24,7 +24,7 @@ export default function HotelInsurance() {
   return (
     <Layout>
       <Head>
-        <title>Hotel Insurance — MARRIUM Insurance | San Antonio, TX</title>
+        <title>Hotel Insurance | MARRIUM Insurance | San Antonio, TX</title>
         <meta name="description" content="Professional hotel and hospitality insurance in San Antonio, TX. Protect your property, guests, and operations with MARRIUM Insurance. Get a free quote." />
       </Head>
 

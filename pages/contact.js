@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>Contact Us — MARRIUM Insurance | Build Your Protection Plan</title>
+        <title>Contact Us | MARRIUM Insurance | Build Your Protection Plan</title>
         <meta name="description" content="Speak with a nationwide licensed insurance specialist. No obligation, no pressure. Personal and business insurance quotes from MARRIUM Insurance." />
       </Head>
 
@@ -21,7 +21,7 @@ export default function Contact() {
             Let&apos;s build your protection plan.
           </h1>
           <p className="mt-2 text-xl text-cream-100 max-w-2xl">
-            Speak with a nationwide licensed specialist — no obligation, no pressure.
+            Speak with a nationwide licensed specialist. No obligation, no pressure.
           </p>
         </div>
       </section>

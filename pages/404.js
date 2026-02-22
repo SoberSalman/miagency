@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <Layout>
       <Head>
-        <title>Page Not Found — MARRIUM Insurance</title>
+        <title>Page Not Found | MARRIUM Insurance</title>
       </Head>
       <section className="min-h-[60vh] flex items-center justify-center bg-white">
         <div className="text-center space-y-6 px-4">

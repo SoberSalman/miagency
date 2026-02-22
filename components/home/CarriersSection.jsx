@@ -32,7 +32,7 @@ export default function CarriersSection() {
             Backed by the Industry&apos;s Best
           </h2>
           <p className="text-cream-300 text-base max-w-xl mx-auto leading-relaxed">
-            We work with the nation&apos;s most trusted insurance carriers — so you get the best coverage at the most competitive rates.
+            We work with the nation&apos;s most trusted insurance carriers, so you get the best coverage at the most competitive rates.
           </p>
         </div>
 
@@ -51,15 +51,15 @@ export default function CarriersSection() {
                 alt={c.name}
                 className="h-10 w-auto object-contain max-w-[120px] opacity-50 group-hover:opacity-100 transition-opacity duration-300"
               />
-              <span className="text-navy-500 group-hover:text-cream-300 text-[10px] tracking-widest uppercase transition-colors duration-300 text-center">
+              <span className="text-cream-400 group-hover:text-white text-xs tracking-wide transition-colors duration-300 text-center font-medium">
                 {c.name}
               </span>
             </a>
           ))}
         </div>
 
-        <p className="text-center text-navy-500 text-xs mt-10 tracking-wide">
-          Access to 50+ carriers — we shop the market so you don&apos;t have to.
+        <p className="text-center text-cream-300 text-xs mt-10 tracking-wide">
+          Access to 50+ carriers. We shop the market so you don&apos;t have to.
         </p>
       </div>
     </section>

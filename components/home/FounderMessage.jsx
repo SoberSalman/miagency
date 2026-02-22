@@ -32,7 +32,7 @@ export default function FounderMessage() {
               <div className="relative w-64 h-[22rem] rounded-[1.5rem] overflow-hidden shadow-2xl">
                 <img
                   src="/My_Photo.jpeg"
-                  alt="Marrium Sohail — Founder, MARRIUM Insurance"
+                  alt="Marrium Sohail, Founder, MARRIUM Insurance"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 via-transparent to-transparent" />
@@ -58,17 +58,17 @@ export default function FounderMessage() {
                 I started MARRIUM Insurance because I believed people deserved more than a policy in the mail.
               </p>
               <p>
-                They deserved someone who actually understood their life — their home, their business, the things they&apos;ve spent years building.
+                They deserved someone who actually understood their life: their home, their business, the things they&apos;ve spent years building.
               </p>
               <p>
-                Whether you&apos;re a homeowner, a restaurant owner across three states, or a contractor building something from the ground up — we are here to make sure you&apos;re protected the right way.
+                Whether you&apos;re a homeowner, a restaurant owner across three states, or a contractor building something from the ground up, we are here to make sure you&apos;re protected the right way.
               </p>
             </div>
 
             {/* Closing statement */}
             <div className="mt-7 pl-5 border-l-2 border-gold-400">
               <p className="font-display text-xl italic text-navy-900">
-                &ldquo;We don&apos;t just sell policies. We build relationships — on trust, clarity, and genuine care.&rdquo;
+                &ldquo;We don&apos;t just sell policies. We build relationships built on trust, clarity, and genuine care.&rdquo;
               </p>
             </div>
 

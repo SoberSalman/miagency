@@ -8,14 +8,14 @@ const coverages = [
   { title: 'General Liability', desc: 'Covers customer injuries, property damage claims, and third-party lawsuits.' },
   { title: 'Commercial Property', desc: 'Protects your building, equipment, inventory, and furniture from covered losses.' },
   { title: 'Business Interruption', desc: 'Replaces lost income when a covered event forces you to temporarily close.' },
-  { title: 'Liquor Liability', desc: 'Essential coverage if you serve alcohol — protects against alcohol-related incidents.' },
+  { title: 'Liquor Liability', desc: 'Essential coverage if you serve alcohol. Protects against alcohol-related incidents.' },
   { title: "Workers' Compensation", desc: 'Covers medical expenses and lost wages for employees injured on the job.' },
   { title: 'Food Spoilage', desc: 'Compensates for inventory losses due to power outages or equipment breakdown.' },
 ];
 
 const whyPoints = [
   { icon: Flame, title: 'Fire & Kitchen Hazards', desc: 'Specialized coverage for the unique fire risks in commercial kitchens.' },
-  { icon: Users, title: 'Slip & Fall Liability', desc: 'High foot traffic means higher risk — we keep you protected.' },
+  { icon: Users, title: 'Slip & Fall Liability', desc: 'High foot traffic means higher risk. We keep you protected.' },
   { icon: ShieldCheck, title: 'Liquor Liability', desc: 'If your restaurant serves alcohol, this is non-negotiable coverage.' },
   { icon: AlertTriangle, title: 'Food Contamination', desc: 'Protection against foodborne illness claims and related legal action.' },
 ];
@@ -24,7 +24,7 @@ export default function RestaurantInsurance() {
   return (
     <Layout>
       <Head>
-        <title>Restaurant Insurance — MARRIUM Insurance | San Antonio, TX</title>
+        <title>Restaurant Insurance | MARRIUM Insurance | San Antonio, TX</title>
         <meta name="description" content="Specialized restaurant insurance coverage in San Antonio, TX. Protect your food service business with liability, property, and business interruption coverage from MARRIUM Insurance." />
       </Head>
 

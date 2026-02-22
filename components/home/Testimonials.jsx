@@ -3,23 +3,23 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "We own three restaurant locations across two states. Marrium restructured our entire commercial coverage — property, liability, and workers comp — under one coherent plan. For the first time, I actually understood what I was paying for and why.",
+    quote: "We own three restaurant locations across two states. Marrium restructured our entire commercial coverage, including property, liability, and workers comp, under one coherent plan. For the first time, I actually understood what I was paying for and why.",
     name: 'Carlos M.',
-    role: 'Restaurant Owner — Texas & New Mexico',
+    role: 'Restaurant Owner, Texas & New Mexico',
     coverage: 'Restaurant Insurance',
     initials: 'CM',
   },
   {
     quote: "After our home flooded, I was overwhelmed. Marrium walked me through every step of the claims process, advocated for us with the carrier, and made sure we didn't leave anything on the table. She treats you like family.",
     name: 'Priya R.',
-    role: 'Homeowner — San Antonio, TX',
+    role: 'Homeowner, San Antonio, TX',
     coverage: 'Homeowners Insurance',
     initials: 'PR',
   },
   {
-    quote: "I run a mid-size contracting company. Marrium found gaps in my previous coverage I didn't even know existed — completed operations, hired auto, umbrella. She didn't upsell me; she educated me. That made all the difference.",
+    quote: "I run a mid-size contracting company. Marrium found gaps in my previous coverage I didn't even know existed: completed operations, hired auto, umbrella. She didn't upsell me; she educated me. That made all the difference.",
     name: 'James T.',
-    role: 'General Contractor — Multi-State Operations',
+    role: 'General Contractor, Multi-State Operations',
     coverage: 'Contractors & Commercial',
     initials: 'JT',
   },

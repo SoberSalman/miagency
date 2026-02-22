@@ -45,28 +45,28 @@ export default function Hero() {
 
             {/* Identity statement */}
             <p className="text-lg text-cream-100/90 leading-relaxed max-w-xl">
-              We are a nationwide insurance agency serving clients across multiple states. From personal auto and homeowners&apos; coverage to nationwide commercial insurance solutions — we protect what you&apos;ve worked hard to build.
+              We are a nationwide insurance agency serving clients across multiple states. From personal auto and homeowners&apos; coverage to nationwide commercial insurance solutions, we protect what you&apos;ve worked hard to build.
             </p>
 
             {/* Welcome line */}
             <p className="text-sm text-gold-300/80 font-medium tracking-wide border-l-2 border-gold-500/40 pl-4 italic">
-              Whether you&apos;re protecting your home, your vehicle, your business, or your legacy — you&apos;re in the right place.
+              Whether you&apos;re protecting your home, your vehicle, your business, or your legacy, you&apos;re in the right place.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link href="/contact?scroll=form"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5">
+                className="group inline-flex items-center justify-center gap-2 px-6 py-4 bg-gold-600 hover:bg-gold-500 text-white text-lg font-bold rounded-lg transition-all shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5 whitespace-nowrap">
                 Get a Quote
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link href="/business"
-                className="inline-flex items-center justify-center px-8 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5">
+                className="inline-flex items-center justify-center px-6 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5 whitespace-nowrap">
                 Protect My Business
               </Link>
               <Link href="/personal"
-                className="inline-flex items-center justify-center px-8 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5">
-                Protect My Home
+                className="inline-flex items-center justify-center px-6 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5 text-center leading-snug">
+                Protect My<br />Home / Auto
               </Link>
             </div>
 
@@ -78,8 +78,8 @@ export default function Hero() {
                 { num: 'All Risk', label: 'Classes' },
               ].map((s) => (
                 <div key={s.label}>
-                  <div className="font-display text-xl font-bold text-gold-400">{s.num}</div>
-                  <div className="text-xs text-cream-300 mt-1">{s.label}</div>
+                  <div className="font-display text-3xl font-bold text-gold-400">{s.num}</div>
+                  <div className="text-sm text-cream-300 mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -92,8 +92,8 @@ export default function Hero() {
             <div className="relative bg-navy-800/60 border border-gold-500/15 rounded-2xl p-8 backdrop-blur-sm shadow-2xl">
               <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/40 to-transparent rounded-t-2xl" />
 
-              <p className="text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">What We Cover</p>
-              <ul className="space-y-3">
+              <p className="text-gold-400 text-sm font-semibold uppercase tracking-widest mb-5">What We Cover</p>
+              <ul className="space-y-4">
                 {[
                   'Personal Auto & Homeowners',
                   'Luxury Residences & High-Value Homes',
@@ -103,16 +103,16 @@ export default function Hero() {
                   'Commercial Fleets & Specialty Risk',
                   'Workers Comp & Umbrella Coverage',
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-cream-200">
-                    <div className="w-1.5 h-1.5 rounded-full bg-gold-500 flex-shrink-0" />
+                  <li key={item} className="flex items-center gap-3 text-base text-cream-200">
+                    <div className="w-2 h-2 rounded-full bg-gold-500 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
 
               <div className="mt-6 pt-5 border-t border-navy-700/60 flex items-center gap-3">
-                <Shield className="w-4 h-4 text-gold-400 flex-shrink-0" />
-                <span className="text-cream-300 text-xs italic">
+                <Shield className="w-5 h-5 text-gold-400 flex-shrink-0" />
+                <span className="text-cream-300 text-sm italic">
                   If it needs protection, we insure it.
                 </span>
               </div>
@@ -121,7 +121,7 @@ export default function Hero() {
             {/* Bottom tag */}
             <div className="flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/10 rounded-xl">
               <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
-              <span className="text-cream-200 text-sm">Licensed specialists available now</span>
+              <span className="text-cream-200 text-base">Licensed specialists available now</span>
             </div>
           </div>
 

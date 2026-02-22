@@ -55,7 +55,7 @@ const steps = [
 const results = {
   coverage: {
     heading: 'You likely have coverage gaps.',
-    body: 'Many people don\'t discover gaps until they file a claim — and by then it\'s too late. A 15-minute conversation with one of our specialists can identify exactly where you\'re exposed and how to close it.',
+    body: 'Many people don\'t discover gaps until they file a claim, and by then it\'s too late. A 15-minute conversation with one of our specialists can identify exactly where you\'re exposed and how to close it.',
     cta: 'Find My Gaps',
     tab: 'personal',
   },
@@ -67,13 +67,13 @@ const results = {
   },
   new: {
     heading: 'Let\'s build from the ground up.',
-    body: 'Starting fresh is actually the best position to be in — we build your coverage the right way from day one, with no legacy gaps or inherited mistakes. Tell us what you\'re protecting and we\'ll take it from there.',
+    body: 'Starting fresh is actually the best position to be in. We build your coverage the right way from day one, with no legacy gaps or inherited mistakes. Tell us what you\'re protecting and we\'ll take it from there.',
     cta: 'Start My Coverage',
     tab: 'personal',
   },
   review: {
     heading: 'A second opinion is always smart.',
-    body: 'Bring us your current policy. We\'ll review it honestly, explain what\'s strong, what\'s weak, and what we\'d recommend — with no pressure to switch. Our job is to inform, not to sell.',
+    body: 'Bring us your current policy. We\'ll review it honestly, explain what\'s strong, what\'s weak, and what we\'d recommend, with no pressure to switch. Our job is to inform, not to sell.',
     cta: 'Request a Review',
     tab: 'personal',
   },

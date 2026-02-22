@@ -10,7 +10,7 @@ const coverageItems = [
     icon: Car,
     title: 'Auto Insurance',
     tagline: 'Your car gets you everywhere. Make sure it stays protected.',
-    description: 'We provide full coverage, liability, collision, comprehensive, and uninsured motorist protection for personal vehicles. Whether you have one car or several drivers in the household, we structure the policy around your situation — not a generic rate sheet.',
+    description: 'We provide full coverage, liability, collision, comprehensive, and uninsured motorist protection for personal vehicles. Whether you have one car or several drivers in the household, we structure the policy around your situation, not a generic rate sheet.',
     query: 'auto',
     color: 'text-blue-400',
   },
@@ -18,7 +18,7 @@ const coverageItems = [
     icon: Home,
     title: 'Homeowners Insurance',
     tagline: 'Your home is likely your largest asset. Protect it accordingly.',
-    description: 'Standard homeowners coverage protects your structure, personal belongings, and personal liability. We make sure your policy reflects your home\'s actual replacement value — not just its market value — so you\'re never underinsured when it matters most.',
+    description: 'Standard homeowners coverage protects your structure, personal belongings, and personal liability. We make sure your policy reflects your home\'s actual replacement value, not just its market value, so you\'re never underinsured when it matters most.',
     query: 'homeowners',
     color: 'text-amber-400',
   },
@@ -26,7 +26,7 @@ const coverageItems = [
     icon: Shield,
     title: 'Umbrella Coverage',
     tagline: 'When your existing policies aren\'t enough.',
-    description: 'A single lawsuit or major incident can exceed your auto or home policy limits. Personal umbrella coverage adds an extra layer of liability protection — typically $1M or more — above your existing policies. It\'s one of the most cost-effective coverages you can add.',
+    description: 'A single lawsuit or major incident can exceed your auto or home policy limits. Personal umbrella coverage adds an extra layer of liability protection, typically $1M or more, above your existing policies. It\'s one of the most cost-effective coverages you can add.',
     query: 'umbrella',
     color: 'text-teal-400',
   },
@@ -34,7 +34,7 @@ const coverageItems = [
     icon: Building,
     title: 'High-Value Homes',
     tagline: 'Standard policies weren\'t built for exceptional properties.',
-    description: 'Luxury homes, historic properties, and high-value residences require specialized coverage — including guaranteed replacement cost, scheduled valuables, and coverage for unique architectural features. We work with carriers that specialize in high-value residential risk.',
+    description: 'Luxury homes, historic properties, and high-value residences require specialized coverage, including guaranteed replacement cost, scheduled valuables, and coverage for unique architectural features. We work with carriers that specialize in high-value residential risk.',
     query: 'high-value-home',
     color: 'text-purple-400',
   },
@@ -50,7 +50,7 @@ const coverageItems = [
     icon: UserCheck,
     title: 'Renters Insurance',
     tagline: 'Your landlord\'s policy doesn\'t cover your stuff.',
-    description: 'Renters insurance protects your personal belongings against theft, fire, and other covered losses — and covers your personal liability if someone is injured in your unit. It\'s one of the most affordable policies available and one of the most overlooked.',
+    description: 'Renters insurance protects your personal belongings against theft, fire, and other covered losses, and covers your personal liability if someone is injured in your unit. It\'s one of the most affordable policies available and one of the most overlooked.',
     query: 'renters',
     color: 'text-rose-400',
   },
@@ -102,7 +102,7 @@ export default function PersonalInsurance() {
   return (
     <Layout>
       <Head>
-        <title>Personal Insurance — MARRIUM Insurance | Nationwide Coverage</title>
+        <title>Personal Insurance | MARRIUM Insurance | Nationwide Coverage</title>
         <meta name="description" content="Personal insurance coverage for auto, homeowners, umbrella, high-value homes, landlord policies, and renters. Nationwide protection from MARRIUM Insurance." />
       </Head>
 
@@ -124,7 +124,7 @@ export default function PersonalInsurance() {
             Your life moves fast, your insurance shouldn&apos;t slow you down.
           </h1>
           <p className="text-xl text-cream-100 max-w-2xl leading-relaxed">
-            From auto and home to umbrella and specialty coverage, we make protection simple, clear, and dependable. Whether it&apos;s your family, home, vehicles, or high-value property — we build coverage around your lifestyle.
+            From auto and home to umbrella and specialty coverage, we make protection simple, clear, and dependable. Whether it&apos;s your family, home, vehicles, or high-value property, we build coverage around your lifestyle.
           </p>
         </div>
       </section>
@@ -160,7 +160,7 @@ export default function PersonalInsurance() {
             Not sure what you need?
           </h2>
           <p className="text-cream-200 text-lg mb-10 max-w-xl mx-auto">
-            Speak with a licensed specialist — no obligation, no pressure. We&apos;ll help you find the right fit.
+            Speak with a licensed specialist. No obligation, no pressure. We&apos;ll help you find the right fit.
           </p>
           <Link
             href="/contact?scroll=form&tab=personal"

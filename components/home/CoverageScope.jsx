@@ -44,7 +44,7 @@ export default function CoverageScope() {
           </h2>
           <div className="w-16 h-px bg-gold-500 mx-auto mt-5 mb-5" />
           <p className="text-cream-300 max-w-xl mx-auto">
-            From your car to your commercial empire — every risk class, across every state we serve.
+            From your car to your commercial empire, every risk class, across every state we serve.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function CoverageScope() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-5 bg-white/5 border border-white/10 rounded-2xl">
           <div>
             <p className="text-white font-display text-lg font-bold">Not sure which category fits?</p>
-            <p className="text-cream-400 text-sm mt-0.5">Our specialists will figure it out — no jargon, no pressure.</p>
+            <p className="text-cream-400 text-sm mt-0.5">Our specialists will figure it out. No jargon, no pressure.</p>
           </div>
           <Link
             href="/contact?scroll=form"

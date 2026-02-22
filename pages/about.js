@@ -5,16 +5,16 @@ import useInView from '../hooks/useInView';
 import { Shield, Award, Users, Globe, CheckCircle2 } from 'lucide-react';
 
 const values = [
-  { title: 'Integrity', desc: 'We provide transparent, honest guidance — no hidden agendas, no unnecessary upsells. You get the truth about your coverage, even when that means telling you your current policy is fine.' },
+  { title: 'Integrity', desc: 'We provide transparent, honest guidance with no hidden agendas and no unnecessary upsells. You get the truth about your coverage, even when that means telling you your current policy is fine.' },
   { title: 'Expertise', desc: 'From personal auto to complex commercial risk, our team stays current with carrier changes, regulation updates, and industry shifts to make sure every recommendation is informed.' },
-  { title: 'Commitment', desc: 'From your first quote to your latest renewal — and every claim in between — we are with you at every stage. One call, one relationship, one agency that knows your name.' },
+  { title: 'Commitment', desc: 'From your first quote to your latest renewal, through every claim in between, we are with you at every stage. One call, one relationship, one agency that knows your name.' },
 ];
 
 const pillars = [
   { icon: Shield, title: 'Licensed & Trusted', desc: 'Fully licensed insurance professionals across personal and commercial lines, committed to regulatory standards and genuine client protection.' },
-  { icon: Award, title: 'Nationwide Reach', desc: 'Serving clients across multiple states — we are not limited by geography. Wherever you are, we bring the same level of attention and expertise.' },
-  { icon: Users, title: 'Personal Service', desc: 'A boutique agency that treats every client as a priority. You are never just a policy number — you are a relationship we take seriously.' },
-  { icon: Globe, title: 'Every Risk Class', desc: 'From personal auto and homeowners to specialty commercial risk — restaurants, fleets, contractors, cyber, EPL. If it needs protection, we insure it.' },
+  { icon: Award, title: 'Nationwide Reach', desc: 'Serving clients across multiple states. We are not limited by geography. Wherever you are, we bring the same level of attention and expertise.' },
+  { icon: Users, title: 'Personal Service', desc: 'A boutique agency that treats every client as a priority. You are never just a policy number; you are a relationship we take seriously.' },
+  { icon: Globe, title: 'Every Risk Class', desc: 'From personal auto and homeowners to specialty commercial risk: restaurants, fleets, contractors, cyber, EPL. If it needs protection, we insure it.' },
 ];
 
 export default function About() {
@@ -24,8 +24,8 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>About Us — MARRIUM Insurance | Nationwide Risk Partner</title>
-        <meta name="description" content="Learn about MARRIUM Insurance — a nationwide licensed insurance agency founded by Marrium Sohail. Personal and commercial coverage across multiple states." />
+        <title>About Us | MARRIUM Insurance | Nationwide Risk Partner</title>
+        <meta name="description" content="Learn about MARRIUM Insurance, a nationwide licensed insurance agency founded by Marrium Sohail. Personal and commercial coverage across multiple states." />
       </Head>
 
       {/* Hero */}
@@ -38,7 +38,7 @@ export default function About() {
             Your Nationwide<br />Risk Partner.
           </h1>
           <p className="text-xl text-cream-100 max-w-2xl leading-relaxed">
-            A licensed insurance agency built on trust, expertise, and genuine care — serving individuals and businesses across multiple states.
+            A licensed insurance agency built on trust, expertise, and genuine care, serving individuals and businesses across multiple states.
           </p>
         </div>
       </section>
@@ -58,13 +58,13 @@ export default function About() {
               <div className="w-16 h-px bg-gold-500 mb-7" />
               <div className="space-y-5 text-navy-600 leading-relaxed text-base">
                 <p>
-                  MARRIUM Insurance was founded with a clear mission: to give individuals and business owners access to honest, expert insurance guidance — without the complexity, without the pressure, and without the runaround.
+                  MARRIUM Insurance was founded with a clear mission: to give individuals and business owners access to honest, expert insurance guidance, without the complexity, without the pressure, and without the runaround.
                 </p>
                 <p>
-                  What began as a local San Antonio practice has grown into a nationwide operation — driven by licensed professionals who believe coverage should be built around your life, not a checklist. Today we serve clients across multiple states, covering everything from personal auto and homeowners policies to complex commercial programs for restaurants, contractors, hospitality groups, and large-scale commercial operations.
+                  What began as a local San Antonio practice has grown into a nationwide operation, driven by licensed professionals who believe coverage should be built around your life, not a checklist. Today we serve clients across multiple states, covering everything from personal auto and homeowners policies to complex commercial programs for restaurants, contractors, hospitality groups, and large-scale commercial operations.
                 </p>
                 <p>
-                  We believe insurance isn&apos;t paperwork. It&apos;s protection for everything you&apos;ve worked hard to build. And that&apos;s exactly how we treat it — personally, strategically, and with care.
+                  We believe insurance isn&apos;t paperwork. It&apos;s protection for everything you&apos;ve worked hard to build. And that&apos;s exactly how we treat it: personally, strategically, and with care.
                 </p>
               </div>
 
@@ -72,7 +72,7 @@ export default function About() {
                 {[
                   'Licensed across personal and commercial lines',
                   'Serving clients in multiple states nationwide',
-                  'All risk classes — personal to enterprise-level commercial',
+                  'All risk classes, personal to enterprise-level commercial',
                   'Bilingual service available',
                 ].map((b) => (
                   <div key={b} className="flex items-start gap-3">
@@ -119,7 +119,7 @@ export default function About() {
                 <div className="relative w-72 h-96 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src="/My_Photo.jpeg"
-                    alt="Marrium Sohail — Founder, MARRIUM Insurance"
+                    alt="Marrium Sohail, Founder, MARRIUM Insurance"
                     className="w-full h-full object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-transparent to-transparent" />
@@ -136,13 +136,13 @@ export default function About() {
               <div className="font-display text-7xl text-gold-300/50 leading-none -mb-3 select-none" aria-hidden="true">&ldquo;</div>
               <div className="space-y-4 text-navy-700 text-base leading-relaxed">
                 <p>
-                  I started this agency because I believed people deserved more than a policy in the mail. They deserved someone who actually understood their situation — their home, their business, the things they&apos;ve spent years building.
+                  I started this agency because I believed people deserved more than a policy in the mail. They deserved someone who actually understood their situation: their home, their business, the things they&apos;ve spent years building.
                 </p>
                 <p>
-                  Insurance should feel like a safety net, not a bureaucratic process. Whether you&apos;re a homeowner, a restaurant owner across three states, or a contractor building something from the ground up — we are here to make sure you&apos;re protected the right way.
+                  Insurance should feel like a safety net, not a bureaucratic process. Whether you&apos;re a homeowner, a restaurant owner across three states, or a contractor building something from the ground up, we are here to make sure you&apos;re protected the right way.
                 </p>
                 <p className="text-navy-900 font-semibold">
-                  We don&apos;t just sell policies. We build relationships — and that distinction means everything.
+                  We don&apos;t just sell policies. We build relationships, and that distinction means everything.
                 </p>
               </div>
               <div className="pt-2 border-t border-gold-200">
@@ -183,7 +183,7 @@ export default function About() {
       <section className="py-24 bg-cream-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-4xl font-bold text-navy-900 mb-4">Ready to Get Protected?</h2>
-          <p className="text-navy-600 mb-8 text-base">Speak with a MARRIUM Insurance specialist — no obligation, no pressure, just honest guidance.</p>
+          <p className="text-navy-600 mb-8 text-base">Speak with a MARRIUM Insurance specialist. No obligation, no pressure, just honest guidance.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact?scroll=form" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-700 hover:bg-gold-600 text-white font-semibold rounded-lg transition-all hover:-translate-y-0.5">
               Get a Free Quote

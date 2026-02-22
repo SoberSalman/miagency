@@ -4,7 +4,7 @@ import { CheckCircle2, PhoneIcon, Clock, Award, Users } from 'lucide-react';
 
 const pillars = [
   { icon: Award,     title: 'Licensed Specialists', desc: 'Fully licensed professionals with expertise across personal and commercial insurance lines.' },
-  { icon: Clock,     title: 'Fast Turnaround',       desc: 'Quick quotes and efficient processing — we respect your time and your urgency.' },
+  { icon: Clock,     title: 'Fast Turnaround',       desc: 'Quick quotes and efficient processing. We respect your time and your urgency.' },
   { icon: Users,     title: 'Personal Service',      desc: 'A dedicated agent who knows your name, your business, and your exposure.' },
   { icon: PhoneIcon, title: '24/7 Support',           desc: 'Round-the-clock availability for questions, claims, and anything in between.' },
 ];
@@ -12,7 +12,7 @@ const pillars = [
 const benefits = [
   'Competitive rates and multi-policy discounts',
   'Customized coverage built around your lifestyle or operation',
-  'Transparent pricing — no hidden fees, no surprises',
+  'Transparent pricing, no hidden fees, no surprises',
   'Claims support from first call to final resolution',
   'Bilingual service available',
   'Nationwide reach with personalized attention',
@@ -38,7 +38,7 @@ export default function WhyUs() {
             </h2>
             <div className="w-16 h-px bg-gold-500 mb-5" />
             <p className="text-cream-300 leading-relaxed mb-7">
-              We don&apos;t just sell policies. We take time to understand your situation, your assets, and your risks — then we build protection around it.
+              We don&apos;t just sell policies. We take time to understand your situation, your assets, and your risks, then we build protection around it.
             </p>
 
             <ul className="space-y-3">
