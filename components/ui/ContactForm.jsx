@@ -104,8 +104,8 @@ const personalExtraFields = {
   other: [],
 };
 
-const defaultPersonal = { name: '', state: '', phone: '', email: '', coverageType: 'auto' };
-const defaultBusiness = { businessName: '', state: '', phone: '', email: '', businessType: 'restaurant', revenue: '', employees: '', partners: '' };
+const defaultPersonal = { name: '', state: '', phone: '', email: '', coverageType: 'auto', comments: '' };
+const defaultBusiness = { businessName: '', state: '', phone: '', email: '', businessType: 'restaurant', revenue: '', employees: '', partners: '', comments: '' };
 
 export default function ContactForm({ defaultTab = 'personal' }) {
   const formRef = useRef(null);
@@ -114,6 +114,7 @@ export default function ContactForm({ defaultTab = 'personal' }) {
 
   const [personalData, setPersonalData] = useState(defaultPersonal);
   const [businessData, setBusinessData] = useState(defaultBusiness);
+  const [honeypot, setHoneypot] = useState('');
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -131,9 +132,30 @@ export default function ContactForm({ defaultTab = 'personal' }) {
   }, [router.query.scroll]);
 
   useEffect(() => {
-    if (router.query.tab === 'business') setTab('business');
-    else if (router.query.tab === 'personal') setTab('personal');
-  }, [router.query.tab]);
+    const { tab: qTab, coverage, type: qType } = router.query;
+
+    // Set the correct tab
+    if (qTab === 'business') setTab('business');
+    else if (qTab === 'personal') setTab('personal');
+
+    // Pre-select personal coverage type
+    if (coverage) {
+      const match = personalCoverageOptions.find(o => o.value === coverage);
+      if (match) {
+        setTab('personal');
+        setPersonalData(prev => ({ ...prev, coverageType: match.value }));
+      }
+    }
+
+    // Pre-select business type
+    if (qType) {
+      const match = businessTypeOptions.find(o => o.value === qType);
+      if (match) {
+        setTab('business');
+        setBusinessData(prev => ({ ...prev, businessType: match.value }));
+      }
+    }
+  }, [router.query.tab, router.query.coverage, router.query.type]);
 
   const validatePersonal = () => {
     const e = {};
@@ -177,8 +199,8 @@ export default function ContactForm({ defaultTab = 'personal' }) {
     setSubmitting(true);
     try {
       const payload = tab === 'personal'
-        ? { ...personalData, formType: 'personal' }
-        : { ...businessData, formType: 'business' };
+        ? { ...personalData, formType: 'personal', website: honeypot }
+        : { ...businessData, formType: 'business', website: honeypot };
 
       const res = await fetch('/api/submit-quote', {
         method: 'POST',
@@ -235,6 +257,17 @@ export default function ContactForm({ defaultTab = 'personal' }) {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-5">
+        {/* Honeypot field — hidden from real users, filled by bots */}
+        <input
+          type="text"
+          name="website"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+          autoComplete="off"
+          tabIndex={-1}
+          aria-hidden="true"
+          style={{ display: 'none' }}
+        />
         {tab === 'personal' ? (
           <>
             <div className="grid sm:grid-cols-2 gap-5">
@@ -297,6 +330,19 @@ export default function ContactForm({ defaultTab = 'personal' }) {
                 ))}
               </div>
             )}
+
+            <div>
+              <label htmlFor="p-comments" className={lbl}>Additional Comments <span className="font-normal text-navy-400">(optional)</span></label>
+              <textarea
+                id="p-comments"
+                name="comments"
+                value={personalData.comments}
+                onChange={handlePersonalChange}
+                rows={3}
+                className={`${field} resize-none`}
+                placeholder="Any additional details, questions, or specific coverage needs..."
+              />
+            </div>
           </>
         ) : (
           <>
@@ -356,6 +402,19 @@ export default function ContactForm({ defaultTab = 'personal' }) {
                 <input type="number" id="partners" name="partners" value={businessData.partners} onChange={handleBusinessChange}
                   className={field} placeholder="0" min="0" />
               </div>
+            </div>
+
+            <div>
+              <label htmlFor="b-comments" className={lbl}>Additional Comments <span className="font-normal text-navy-400">(optional)</span></label>
+              <textarea
+                id="b-comments"
+                name="comments"
+                value={businessData.comments}
+                onChange={handleBusinessChange}
+                rows={3}
+                className={`${field} resize-none`}
+                placeholder="Describe your business, existing coverage, or any specific insurance needs..."
+              />
             </div>
           </>
         )}
