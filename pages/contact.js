@@ -8,21 +8,20 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>Contact Us — MARRIUM Insurance | Get a Free Quote</title>
-        <meta name="description" content="Contact MARRIUM Insurance for a free quote on auto, home, restaurant, or hotel insurance. Serving San Antonio, TX and surrounding areas." />
+        <title>Contact Us — MARRIUM Insurance | Build Your Protection Plan</title>
+        <meta name="description" content="Speak with a nationwide licensed insurance specialist. No obligation, no pressure. Personal and business insurance quotes from MARRIUM Insurance." />
       </Head>
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-navy-900 to-navy-800 py-24">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-gold-400 mb-8">
-            Contact Us
-          </nav>
           <p className="text-gold-300 font-medium tracking-widest text-sm uppercase mb-3">Get in Touch</p>
-          <h1 className="font-display text-5xl sm:text-6xl font-bold text-white">Request a Free Quote</h1>
-          <p className="mt-6 text-xl text-cream-100 max-w-2xl">
-            Speak with a licensed specialist. No obligation, no pressure — just honest guidance and competitive rates.
+          <h1 className="font-display text-5xl sm:text-6xl font-bold text-white mb-4">
+            Let&apos;s build your protection plan.
+          </h1>
+          <p className="mt-2 text-xl text-cream-100 max-w-2xl">
+            Speak with a nationwide licensed specialist — no obligation, no pressure.
           </p>
         </div>
       </section>
@@ -32,11 +31,11 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12">
 
-            {/* Form — takes more space */}
+            {/* Form */}
             <div className="lg:col-span-3">
               <div className="bg-cream-50 border border-cream-200 rounded-2xl p-8 sm:p-10">
-                <h2 className="font-display text-3xl font-bold text-navy-900 mb-2">Send Us a Message</h2>
-                <p className="text-navy-500 mb-8 text-sm">Fill in your details and we&apos;ll respond within one business day.</p>
+                <h2 className="font-display text-3xl font-bold text-navy-900 mb-2">Request a Quote</h2>
+                <p className="text-navy-500 mb-8 text-sm">Choose Personal or Business below and fill in your details.</p>
                 <ContactForm />
               </div>
             </div>
@@ -48,7 +47,7 @@ export default function Contact() {
 
                 <div className="space-y-5">
                   {[
-                    { icon: PhoneIcon, label: 'Phone', value: 'Your Phone Number', sub: 'Call or text anytime' },
+                    { icon: PhoneIcon, label: 'Phone', value: '+1 (210) 800-5910', sub: 'Call or text anytime' },
                     { icon: Mail, label: 'Email', value: 'info@marriuminsurance.com', sub: 'We respond within 24hrs' },
                     { icon: MapPin, label: 'Address', value: '9502 Computer Dr #216', sub: 'San Antonio, TX 78229' },
                     { icon: Clock, label: 'Office Hours', value: 'Mon–Fri: 9am–6pm', sub: '24/7 emergency support' },

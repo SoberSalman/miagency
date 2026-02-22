@@ -1,64 +1,97 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout/Layout';
-import { Shield, Award, Users, MapPin, CheckCircle2 } from 'lucide-react';
+import useInView from '../hooks/useInView';
+import { Shield, Award, Users, Globe, CheckCircle2 } from 'lucide-react';
+
+const values = [
+  { title: 'Integrity', desc: 'We provide transparent, honest guidance — no hidden agendas, no unnecessary upsells. You get the truth about your coverage, even when that means telling you your current policy is fine.' },
+  { title: 'Expertise', desc: 'From personal auto to complex commercial risk, our team stays current with carrier changes, regulation updates, and industry shifts to make sure every recommendation is informed.' },
+  { title: 'Commitment', desc: 'From your first quote to your latest renewal — and every claim in between — we are with you at every stage. One call, one relationship, one agency that knows your name.' },
+];
+
+const pillars = [
+  { icon: Shield, title: 'Licensed & Trusted', desc: 'Fully licensed insurance professionals across personal and commercial lines, committed to regulatory standards and genuine client protection.' },
+  { icon: Award, title: 'Nationwide Reach', desc: 'Serving clients across multiple states — we are not limited by geography. Wherever you are, we bring the same level of attention and expertise.' },
+  { icon: Users, title: 'Personal Service', desc: 'A boutique agency that treats every client as a priority. You are never just a policy number — you are a relationship we take seriously.' },
+  { icon: Globe, title: 'Every Risk Class', desc: 'From personal auto and homeowners to specialty commercial risk — restaurants, fleets, contractors, cyber, EPL. If it needs protection, we insure it.' },
+];
 
 export default function About() {
+  const [storyRef, storyInView] = useInView();
+  const [valuesRef, valuesInView] = useInView();
+
   return (
     <Layout>
       <Head>
-        <title>About Us — MARRIUM Insurance | San Antonio, TX</title>
-        <meta name="description" content="Learn about MARRIUM Insurance — a trusted, licensed insurance agency specializing in auto, home, restaurant, and hotel coverage in San Antonio, TX." />
+        <title>About Us — MARRIUM Insurance | Nationwide Risk Partner</title>
+        <meta name="description" content="Learn about MARRIUM Insurance — a nationwide licensed insurance agency founded by Marrium Sohail. Personal and commercial coverage across multiple states." />
       </Head>
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-navy-900 to-navy-800 py-24">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
+      <section className="relative bg-gradient-to-br from-navy-900 to-navy-800 py-28 overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
+        <div className="absolute top-16 right-20 w-96 h-96 rounded-full bg-gold-500 opacity-[0.06] blur-[100px]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-gold-400 mb-8">
-            About Us
-          </nav>
-          <p className="text-gold-300 font-medium tracking-widest text-sm uppercase mb-3">Who We Are</p>
-          <h1 className="font-display text-5xl sm:text-6xl font-bold text-white">About MARRIUM Insurance</h1>
-          <p className="mt-6 text-xl text-cream-100 max-w-2xl">
-            A licensed insurance agency built on trust, expertise, and genuine care for every client we serve.
+          <p className="text-gold-300 font-medium tracking-widest text-xs uppercase mb-4">Who We Are</p>
+          <h1 className="font-display text-5xl sm:text-6xl font-bold text-white mb-6 max-w-2xl leading-tight">
+            Your Nationwide<br />Risk Partner.
+          </h1>
+          <p className="text-xl text-cream-100 max-w-2xl leading-relaxed">
+            A licensed insurance agency built on trust, expertise, and genuine care — serving individuals and businesses across multiple states.
           </p>
         </div>
       </section>
 
       {/* Story */}
-      <section className="py-24 bg-white">
+      <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-gold-700 font-medium tracking-widest text-sm uppercase mb-3">Our Story</p>
-              <h2 className="font-display text-4xl font-bold text-navy-900 mb-6">
-                Your Trusted Local Insurance Specialist
+          <div
+            ref={storyRef}
+            className="grid lg:grid-cols-2 gap-16 items-center"
+          >
+            <div className={`reveal-left ${storyInView ? 'visible' : ''}`}>
+              <p className="text-gold-700 font-medium tracking-widest text-xs uppercase mb-3">Our Story</p>
+              <h2 className="font-display text-4xl font-bold text-navy-900 mb-4">
+                Built on the Belief That Insurance Should Work For You.
               </h2>
-              <div className="w-16 h-0.5 bg-gold-500 mb-8" />
-              <div className="space-y-5 text-navy-600 leading-relaxed">
+              <div className="w-16 h-px bg-gold-500 mb-7" />
+              <div className="space-y-5 text-navy-600 leading-relaxed text-base">
                 <p>
-                  MARRIUM Insurance was founded with a clear mission: to provide honest, expert insurance guidance to individuals and business owners in San Antonio and beyond.
+                  MARRIUM Insurance was founded with a clear mission: to give individuals and business owners access to honest, expert insurance guidance — without the complexity, without the pressure, and without the runaround.
                 </p>
                 <p>
-                  Led by Marrium Sohail, our agency brings together years of industry experience with a deeply personal approach to service. We believe every client deserves not just coverage, but confidence.
+                  Led by Marrium Sohail, a licensed insurance professional, our agency has grown from a local San Antonio practice into a nationwide operation serving clients across multiple states. We cover everything from personal auto and homeowners policies to complex commercial programs for restaurants, contractors, hospitality groups, and large-scale commercial operations.
                 </p>
                 <p>
-                  From personal auto and home policies to complex commercial coverage for restaurants and hotels, we offer solutions tailored precisely to your situation — not generic, one-size-fits-all plans.
+                  We believe insurance isn&apos;t paperwork. It&apos;s protection for everything you&apos;ve worked hard to build. And that&apos;s exactly how we treat it — personally, strategically, and with care.
                 </p>
+              </div>
+
+              <div className="mt-8 space-y-3">
+                {[
+                  'Licensed across personal and commercial lines',
+                  'Serving clients in multiple states nationwide',
+                  'All risk classes — personal to enterprise-level commercial',
+                  'Bilingual service available',
+                ].map((b) => (
+                  <div key={b} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-gold-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-navy-700 text-sm">{b}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="space-y-5">
-              {[
-                { icon: Shield, title: 'Licensed & Trusted', desc: 'Fully licensed insurance professionals committed to regulatory standards and client protection.' },
-                { icon: Award, title: 'Industry Expertise', desc: 'Deep knowledge across auto, home, and commercial insurance lines to serve you comprehensively.' },
-                { icon: Users, title: 'Personal Service', desc: 'A boutique agency that treats every client as a priority — not just a policy number.' },
-                { icon: MapPin, title: 'Local Roots', desc: 'Based in San Antonio, TX — we understand the local market and community we serve.' },
-              ].map((item) => {
+            <div className={`reveal-right ${storyInView ? 'visible' : ''} space-y-4`}>
+              {pillars.map((item, i) => {
                 const Icon = item.icon;
                 return (
-                  <div key={item.title} className="flex gap-5 p-5 bg-cream-50 rounded-xl border border-cream-200">
+                  <div
+                    key={item.title}
+                    className="flex gap-5 p-5 bg-cream-50 rounded-xl border border-cream-200 hover:border-gold-300 hover:shadow-md transition-all duration-300"
+                    style={{ transitionDelay: `${i * 80}ms` }}
+                  >
                     <div className="w-12 h-12 bg-navy-900 rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon className="w-5 h-5 text-gold-400" />
                     </div>
@@ -74,20 +107,72 @@ export default function About() {
         </div>
       </section>
 
+      {/* Founder */}
+      <section className="py-28 bg-cream-50 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-full bg-gradient-to-l from-gold-50/60 to-transparent pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-2xl border border-gold-300/40" />
+                <div className="relative w-72 h-96 rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src="/My_Photo.jpeg"
+                    alt="Marrium Sohail — Founder, MARRIUM Insurance"
+                    className="w-full h-full object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <p className="font-display text-xl font-bold text-white">Marrium Sohail</p>
+                    <p className="text-gold-300 text-xs tracking-wide mt-0.5">Founder &amp; Principal Agent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-5">
+              <p className="text-gold-700 font-medium tracking-widest text-xs uppercase">From the Founder</p>
+              <div className="font-display text-7xl text-gold-300/50 leading-none -mb-3 select-none" aria-hidden="true">&ldquo;</div>
+              <div className="space-y-4 text-navy-700 text-base leading-relaxed">
+                <p>
+                  I started this agency because I believed people deserved more than a policy in the mail. They deserved someone who actually understood their situation — their home, their business, the things they&apos;ve spent years building.
+                </p>
+                <p>
+                  Insurance should feel like a safety net, not a bureaucratic process. Whether you&apos;re a homeowner, a restaurant owner across three states, or a contractor building something from the ground up — we are here to make sure you&apos;re protected the right way.
+                </p>
+                <p className="text-navy-900 font-semibold">
+                  We don&apos;t just sell policies. We build relationships — and that distinction means everything.
+                </p>
+              </div>
+              <div className="pt-2 border-t border-gold-200">
+                <p className="font-display text-2xl text-navy-900 italic">Marrium Sohail</p>
+                <p className="text-navy-500 text-sm mt-1">Founder &amp; Principal Agent, MARRIUM Insurance</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
-      <section className="py-20 bg-navy-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gold-300 font-medium tracking-widest text-sm uppercase mb-3">Our Values</p>
-          <h2 className="font-display text-4xl font-bold text-white mb-16">What We Stand For</h2>
-          <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              { title: 'Integrity', desc: 'We provide transparent, honest guidance with no hidden agendas or unnecessary upsells.' },
-              { title: 'Expertise', desc: 'We stay current with industry changes to ensure you always receive informed recommendations.' },
-              { title: 'Commitment', desc: 'From your first quote to your latest renewal, we are with you at every stage.' },
-            ].map((v) => (
-              <div key={v.title} className="p-8 border border-navy-700 rounded-2xl">
-                <h3 className="font-display text-2xl font-bold text-gold-400 mb-4">{v.title}</h3>
-                <p className="text-cream-100 leading-relaxed text-sm">{v.desc}</p>
+      <section className="py-24 bg-navy-900 relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" />
+        <div
+          ref={valuesRef}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        >
+          <p className="text-gold-300 font-medium tracking-widest text-xs uppercase mb-3">Our Values</p>
+          <h2 className="font-display text-4xl font-bold text-white mb-14">What We Stand For</h2>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {values.map((v, i) => (
+              <div
+                key={v.title}
+                className={`reveal ${valuesInView ? 'visible' : ''} p-8 border border-navy-700 hover:border-gold-500/40 rounded-2xl text-left transition-all duration-300`}
+                style={{ transitionDelay: valuesInView ? `${i * 120}ms` : '0ms' }}
+              >
+                <h3 className="font-display text-2xl font-bold text-gold-400 mb-3">{v.title}</h3>
+                <p className="text-cream-200 leading-relaxed text-sm">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -95,13 +180,18 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-cream-50">
+      <section className="py-24 bg-cream-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-4xl font-bold text-navy-900 mb-4">Ready to Get Protected?</h2>
-          <p className="text-navy-600 mb-8">Speak with a MARRIUM Insurance specialist today and get your free, personalized quote.</p>
-          <Link href="/contact?scroll=form" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-700 hover:bg-gold-600 text-white font-semibold rounded-lg transition-colors">
-            Get a Free Quote
-          </Link>
+          <p className="text-navy-600 mb-8 text-base">Speak with a MARRIUM Insurance specialist — no obligation, no pressure, just honest guidance.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact?scroll=form" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-700 hover:bg-gold-600 text-white font-semibold rounded-lg transition-all hover:-translate-y-0.5">
+              Get a Free Quote
+            </Link>
+            <a href="tel:+12108005910" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-navy-200 text-navy-700 hover:border-gold-500 hover:text-gold-700 font-semibold rounded-lg transition-all">
+              Call +1 (210) 800-5910
+            </a>
+          </div>
         </div>
       </section>
     </Layout>

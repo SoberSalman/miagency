@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="space-y-4">
               <img src="/logo.jpg" alt="MARRIUM Insurance" className="h-14 w-auto brightness-0 invert" />
               <p className="text-sm leading-relaxed text-cream-200">
-                Professional insurance solutions for individuals and businesses. Trusted expertise. Personalized service.
+                Nationwide insurance solutions for individuals and businesses. Trusted expertise. Personalized service.
               </p>
               <div className="flex space-x-4 pt-2">
                 <a href="https://www.facebook.com/marriuminsurance/" target="_blank" rel="noopener noreferrer"
@@ -31,17 +31,17 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Services */}
+            {/* Insurance */}
             <div>
-              <h4 className="font-display text-lg text-white mb-5 tracking-wide">Our Services</h4>
+              <h4 className="font-display text-lg text-white mb-5 tracking-wide">Coverage</h4>
               <ul className="space-y-3 text-sm">
                 {[
-                  { label: 'Auto Insurance', href: '/services/auto' },
-                  { label: 'Home Insurance', href: '/services/home-insurance' },
-                  { label: 'Restaurant Insurance', href: '/services/restaurant' },
-                  { label: 'Hotel Insurance', href: '/services/hotel' },
+                  { label: 'Personal Insurance', href: '/personal' },
+                  { label: 'Business Insurance', href: '/business' },
+                  { label: 'About Us', href: '/about' },
+                  { label: 'Contact', href: '/contact' },
                 ].map((s) => (
-                  <li key={s.href}>
+                  <li key={s.href + s.label}>
                     <Link href={s.href} className="text-cream-200 hover:text-gold-400 transition">{s.label}</Link>
                   </li>
                 ))}
@@ -71,7 +71,7 @@ export default function Footer() {
               <ul className="space-y-4 text-sm">
                 <li className="flex items-start gap-3">
                   <PhoneIcon className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-cream-200">Your Phone Number</span>
+                  <a href="tel:+12108005910" className="text-cream-200 hover:text-gold-400 transition">+1 (210) 800-5910</a>
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />

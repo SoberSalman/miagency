@@ -1,79 +1,130 @@
 import Link from 'next/link';
-import { ArrowRight, Shield } from 'lucide-react';
+import { ArrowRight, Shield, Globe, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 min-h-[90vh] flex items-center">
-      {/* Logo background watermark */}
-      <div className="absolute inset-0">
-        <img src="/logo.jpg" alt="" className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/3 w-96 h-96 opacity-5 blur-sm" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 min-h-screen flex flex-col justify-center">
+      {/* Logo watermark */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img src="/logo.jpg" alt="" aria-hidden="true"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/3 w-[520px] h-[520px] opacity-[0.04] blur-sm select-none" />
       </div>
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-gold-500 opacity-5 blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-gold-300 opacity-5 blur-3xl" />
 
-      {/* Gold top border accent */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
+      {/* Ambient glows */}
+      <div className="absolute top-16 right-24 w-[500px] h-[500px] rounded-full bg-gold-500 opacity-[0.06] blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-gold-300 opacity-[0.05] blur-[100px] pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      {/* Gold top rule */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* Left Content */}
-          <div className="space-y-8">
+          {/* ── Left ── */}
+          <div className="space-y-8 animate-fadeInUp">
+
+            {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full">
-              <Shield className="w-4 h-4 text-gold-400" />
-              <span className="text-gold-300 text-sm font-medium tracking-wide">Licensed Insurance Specialists</span>
+              <Globe className="w-4 h-4 text-gold-400" />
+              <span className="text-gold-300 text-sm font-medium tracking-wide">Nationwide Insurance Agency</span>
             </div>
 
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              Protection You<br />
-              <span className="text-gold-400 italic">Can Trust.</span>
-            </h1>
+            {/* Headline */}
+            <div className="space-y-3">
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-[4.25rem] font-bold text-white leading-[1.08] tracking-tight">
+                We Protect What<br />
+                <span className="gold-shimmer italic">Matters Most.</span>
+              </h1>
+            </div>
 
-            <p className="text-lg text-cream-100 leading-relaxed max-w-xl">
-              MARRIUM Insurance delivers comprehensive coverage for auto, home, restaurants, and hotels. Expert guidance, competitive rates, and personal service — every step of the way.
+            {/* Identity statement */}
+            <p className="text-lg text-cream-100/90 leading-relaxed max-w-xl">
+              We are a nationwide insurance agency serving clients across multiple states. From personal auto and homeowners&apos; coverage to nationwide commercial insurance solutions — we protect what you&apos;ve worked hard to build.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact?scroll=form" className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-gold-500/30">
-                Get a Free Quote
+            {/* Welcome line */}
+            <p className="text-sm text-gold-300/80 font-medium tracking-wide border-l-2 border-gold-500/40 pl-4 italic">
+              Whether you&apos;re protecting your home, your vehicle, your business, or your legacy — you&apos;re in the right place.
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <Link href="/contact?scroll=form"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-600 hover:bg-gold-500 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5">
+                Get a Quote
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link href="/services/auto" className="inline-flex items-center justify-center px-8 py-4 border-2 border-cream-100/30 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all">
-                Explore Coverage
+              <Link href="/business"
+                className="inline-flex items-center justify-center px-8 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5">
+                Protect My Business
+              </Link>
+              <Link href="/personal"
+                className="inline-flex items-center justify-center px-8 py-4 border border-cream-100/25 text-cream-100 hover:border-gold-400 hover:text-gold-400 rounded-lg font-medium transition-all hover:-translate-y-0.5">
+                Protect My Home
               </Link>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-navy-700">
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-navy-700/60">
               {[
-                { num: '15+', label: 'Years of Experience' },
-                { num: '3,000+', label: 'Clients Protected' },
-                { num: '98%', label: 'Client Satisfaction' },
+                { num: 'Nationwide', label: 'Coverage' },
+                { num: 'Multi-State', label: 'Reach' },
+                { num: 'All Risk', label: 'Classes' },
               ].map((s) => (
                 <div key={s.label}>
-                  <div className="font-display text-3xl font-bold text-gold-400">{s.num}</div>
-                  <div className="text-xs text-cream-200 mt-1 leading-snug">{s.label}</div>
+                  <div className="font-display text-xl font-bold text-gold-400">{s.num}</div>
+                  <div className="text-xs text-cream-300 mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right — Image placeholder */}
-          <div className="hidden lg:block">
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-navy-700 to-navy-800 rounded-2xl border border-gold-500/20 overflow-hidden shadow-2xl flex items-center justify-center">
-                <img src="/logo.jpg" alt="MARRIUM Insurance" className="w-48 h-48 object-contain opacity-40" />
+          {/* ── Right ── */}
+          <div className="hidden lg:flex flex-col gap-5 animate-fadeInUp delay-200">
+
+            {/* Main card */}
+            <div className="relative bg-navy-800/60 border border-gold-500/15 rounded-2xl p-8 backdrop-blur-sm shadow-2xl">
+              <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/40 to-transparent rounded-t-2xl" />
+
+              <p className="text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">What We Cover</p>
+              <ul className="space-y-3">
+                {[
+                  'Personal Auto & Homeowners',
+                  'Luxury Residences & High-Value Homes',
+                  'Restaurant & Hospitality',
+                  'Contractors & Commercial Property',
+                  'Professional Liability & Cyber',
+                  'Commercial Fleets & Specialty Risk',
+                  'Workers Comp & Umbrella Coverage',
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm text-cream-200">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold-500 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-6 pt-5 border-t border-navy-700/60 flex items-center gap-3">
+                <Shield className="w-4 h-4 text-gold-400 flex-shrink-0" />
+                <span className="text-cream-300 text-xs italic">
+                  If it needs protection, we insure it.
+                </span>
               </div>
-              {/* Floating card */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-5 w-44">
-                <div className="text-gold-700 font-display text-2xl font-bold">San Antonio</div>
-                <div className="text-navy-600 text-xs mt-1 font-medium">Texas — Serving since 2009</div>
-              </div>
+            </div>
+
+            {/* Bottom tag */}
+            <div className="flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/10 rounded-xl">
+              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
+              <span className="text-cream-200 text-sm">Licensed specialists available now</span>
             </div>
           </div>
 
         </div>
+      </div>
+
+      {/* Scroll nudge */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-cream-400/50 animate-bounce">
+        <ChevronDown className="w-5 h-5" />
       </div>
     </section>
   );
