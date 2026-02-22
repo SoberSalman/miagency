@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 510" role="img" aria-label="MARRIUM Insurance">
+  <defs>
+    <radialGradient id="dotGrad" cx="38%" cy="36%" r="62%">
+      <stop offset="0%"   stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#E53935"/>
+    </radialGradient>
+  </defs>
+
+  <!-- M letterform with i-stem as transparent cutout -->
+  <path
+    fill-rule="evenodd"
+    d="M 0,385 L 0,0 L 150,0 L 200,130 L 250,0 L 400,0 L 400,385 Z
+       M 168,178 L 168,385 L 232,385 L 232,178 Z"
+    fill="#2a2a2a"
+  />
+
+  <!-- Orange-red gradient circle: dot of the i -->
+  <circle cx="200" cy="154" r="36" fill="url(#dotGrad)"/>
+
+  <!-- MARRIUM wordmark -->
+  <text
+    x="200" y="446"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-size="66"
+    font-weight="900"
+    fill="#1a1a1a"
+    text-anchor="middle"
+    letter-spacing="3"
+  >MARRIUM</text>
+
+  <!-- INSURANCE subtext -->
+  <text
+    x="200" y="488"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="21"
+    font-weight="400"
+    fill="#1a1a1a"
+    text-anchor="middle"
+    letter-spacing="13"
+  >INSURANCE</text>
+</svg>
