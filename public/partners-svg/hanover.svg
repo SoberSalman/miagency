@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- The Hanover elegant serif wordmark -->
+  <text
+    x="100"
+    y="22"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="10"
+    font-weight="400"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="4"
+    opacity="0.75"
+  >THE</text>
+  <text
+    x="100"
+    y="44"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="24"
+    font-weight="700"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="1.5"
+  >Hanover</text>
+  <!-- Thin elegant underline -->
+  <line x1="42" y1="49" x2="158" y2="49" stroke="#FFFFFF" stroke-width="0.75" opacity="0.35"/>
+</svg>

@@ -55,7 +55,7 @@ export default function Navbar() {
   const isActive = (href) => router.pathname === href;
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 bg-navy-900 ${scrolled ? 'shadow-2xl shadow-black/40' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-navy-900 shadow-2xl shadow-black/40' : 'bg-transparent'}`}>
       {/* Gold hairline at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/40 to-transparent" />
 

@@ -61,7 +61,7 @@ export default function About() {
                   MARRIUM Insurance was founded with a clear mission: to give individuals and business owners access to honest, expert insurance guidance — without the complexity, without the pressure, and without the runaround.
                 </p>
                 <p>
-                  Led by Marrium Sohail, a licensed insurance professional, our agency has grown from a local San Antonio practice into a nationwide operation serving clients across multiple states. We cover everything from personal auto and homeowners policies to complex commercial programs for restaurants, contractors, hospitality groups, and large-scale commercial operations.
+                  What began as a local San Antonio practice has grown into a nationwide operation — driven by licensed professionals who believe coverage should be built around your life, not a checklist. Today we serve clients across multiple states, covering everything from personal auto and homeowners policies to complex commercial programs for restaurants, contractors, hospitality groups, and large-scale commercial operations.
                 </p>
                 <p>
                   We believe insurance isn&apos;t paperwork. It&apos;s protection for everything you&apos;ve worked hard to build. And that&apos;s exactly how we treat it — personally, strategically, and with care.

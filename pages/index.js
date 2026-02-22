@@ -8,6 +8,7 @@ import CoverageScope from '../components/home/CoverageScope';
 import ProtectionAssessment from '../components/home/ProtectionAssessment';
 import Testimonials from '../components/home/Testimonials';
 import WhyUs from '../components/home/WhyUs';
+import CarriersSection from '../components/home/CarriersSection';
 
 export default function Home() {
   return (
@@ -60,6 +61,9 @@ export default function Home() {
 
       {/* 6 — cream: social proof */}
       <Testimonials />
+
+      {/* Carrier partners grid */}
+      <CarriersSection />
 
       {/* 7 — navy: final commitment + CTA */}
       <WhyUs />

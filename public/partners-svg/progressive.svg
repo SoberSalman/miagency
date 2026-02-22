@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Blue box accent -->
+  <rect x="24" y="18" width="20" height="20" rx="3" fill="#003DA5"/>
+  <text
+    x="34"
+    y="33"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="11"
+    font-weight="900"
+    fill="#FFFFFF"
+    text-anchor="middle"
+  >P</text>
+  <!-- Progressive wordmark -->
+  <text
+    x="116"
+    y="34"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="18"
+    font-weight="900"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >Progressive</text>
+</svg>

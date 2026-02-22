@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- AmTrust wordmark for dark background -->
+  <text
+    x="100"
+    y="32"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="26"
+    font-weight="700"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >AmTrust</text>
+  <text
+    x="100"
+    y="48"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="9"
+    font-weight="400"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="2"
+    opacity="0.65"
+  >FINANCIAL SERVICES</text>
+</svg>

@@ -3,16 +3,22 @@ import { ArrowRight, Shield, Globe, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900 min-h-screen flex flex-col justify-center">
-      {/* Logo watermark */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img src="/logo.jpg" alt="" aria-hidden="true"
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/3 w-[520px] h-[520px] opacity-[0.04] blur-sm select-none" />
-      </div>
+    <section className="relative overflow-hidden min-h-screen flex flex-col justify-center">
+      {/* Background video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/hero-bg.mp4"
+      />
 
-      {/* Ambient glows */}
-      <div className="absolute top-16 right-24 w-[500px] h-[500px] rounded-full bg-gold-500 opacity-[0.06] blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-gold-300 opacity-[0.05] blur-[100px] pointer-events-none" />
+      {/* Dark overlay so text stays readable */}
+      <div className="absolute inset-0 bg-navy-900/70" />
+
+      {/* Subtle gold vignette at bottom */}
+      <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-navy-900/80 to-transparent pointer-events-none" />
 
       {/* Gold top rule */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent" />

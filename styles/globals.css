@@ -98,7 +98,7 @@ select:-webkit-autofill {
 .marquee-track {
   display: inline-flex;
   white-space: nowrap;
-  animation: marquee 28s linear infinite;
+  animation: marquee 55s linear infinite;
   will-change: transform;
 }
 

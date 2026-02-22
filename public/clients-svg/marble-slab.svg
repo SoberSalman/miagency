@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Marble Slab Creamery wordmark -->
+  <text
+    x="100"
+    y="26"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="700"
+    fill="#00527F"
+    text-anchor="middle"
+    letter-spacing="1"
+  >Marble Slab</text>
+  <text
+    x="100"
+    y="46"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="12"
+    font-weight="400"
+    fill="#00527F"
+    text-anchor="middle"
+    letter-spacing="3"
+  >CREAMERY</text>
+  <!-- Decorative thin line -->
+  <line x1="50" y1="30" x2="150" y2="30" stroke="#00527F" stroke-width="0.5" opacity="0.4"/>
+</svg>

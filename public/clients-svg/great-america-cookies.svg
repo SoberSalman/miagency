@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Great American Cookies wordmark -->
+  <text
+    x="100"
+    y="18"
+    font-family="Georgia, serif"
+    font-size="10"
+    font-weight="600"
+    fill="#8B4513"
+    text-anchor="middle"
+    letter-spacing="2"
+  >GREAT AMERICAN</text>
+  <!-- Thin separator line -->
+  <line x1="30" y1="22" x2="170" y2="22" stroke="#8B4513" stroke-width="0.75" opacity="0.4"/>
+  <text
+    x="100"
+    y="46"
+    font-family="Georgia, serif"
+    font-size="24"
+    font-weight="700"
+    fill="#8B4513"
+    text-anchor="middle"
+    letter-spacing="1"
+  >Cookies</text>
+  <!-- Small cookie dot accent -->
+  <circle cx="176" cy="44" r="3" fill="#8B4513" opacity="0.5"/>
+  <circle cx="24" cy="44" r="3" fill="#8B4513" opacity="0.5"/>
+</svg>
